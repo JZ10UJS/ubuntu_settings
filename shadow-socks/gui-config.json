@@ -1,0 +1,62 @@
+{
+    "configs": [
+        {
+            "method": "aes-256-cfb",
+            "password": "IHZAUm",
+            "remarks": "us3",
+            "server": "us3.vonc.tk",
+            "server_port": 37997
+        },
+        {
+            "method": "rc4-md5",
+            "password": "aqatyu",
+            "remarks": "miaoss.LA",
+            "server": "23.89.13.247",
+            "server_port": 15950
+        },
+        {
+            "method": "rc4-md5",
+            "password": "aqatyu",
+            "remarks": "miaoss.CANADA",
+            "server": "64.137.254.103",
+            "server_port": 15950
+        },
+        {
+            "method": "rc4-md5",
+            "password": "aqatyu",
+            "remarks": "miaoss.RUSSIA",
+            "server": "185.154.22.241",
+            "server_port": 15950
+        },
+        {
+            "method": "aes-256-cfb",
+            "password": "IHZAUm",
+            "remarks": "us",
+            "server": "us.vonc.tk",
+            "server_port": 37997
+        },
+        {
+            "method": "aes-256-cfb",
+            "password": "IHZAUm",
+            "remarks": "us1",
+            "server": "us1.vonc.tk",
+            "server_port": 37997
+        },
+        {
+            "method": "rc4-md5",
+            "password": "aqatyu",
+            "remarks": "miaoss.JP",
+            "server": "104.156.239.148",
+            "server_port": 15950
+        },
+        {
+            "method": "aes-256-cfb",
+            "password": "IHZAUm",
+            "remarks": "u2",
+            "server": "us2.vonc.tk",
+            "server_port": 37997
+        }
+    ],
+    "localPort": 1080,
+    "shareOverLan": false
+}
