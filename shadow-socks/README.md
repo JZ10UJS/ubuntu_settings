@@ -25,3 +25,12 @@ select the gui-config.json, will load the ss account infomation.
 then set the proxy pac. in ubuntu,
 System settings > Network > Network Proxy, select the "Automatic" method,
 and the URL e.g. file:///home/<your_name>/Documents/ss/auto.pac
+
+
+# SSR
+
+`
+python local.py -s us01.fk360.bid -p 51416 -k LyUTo7 -m aes-256-cfb -o auth_sha1_v4 -O tls1.2_ticket_auth -v
+
+python local.py -s us.vonc.tk -p 37997 -k IHZAUm -m aes-256-cfb -o auth_sha1_v4 -O tls1.2_ticket_auth -v
+`

@@ -13,6 +13,8 @@ var rules = [
             "miaoss.tk",
             "odoo.com", 
             "voncop.tk",
+            "dirtyhandsphp.blogspot.in",
+            "github-production-release-asset-2e65be.s3.amazonaws.com",
         ]
     ], 
     [
