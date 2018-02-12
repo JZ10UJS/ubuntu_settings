@@ -1,0 +1,10 @@
+<templates>
+    <button type="button" t-name="ListView.row.text_button" t-att-title="widget.string" t-att-disabled="disabled || undefined"
+    t-attf-class="#{widget.notify ? 'o_notify': ''} #{disabled ? 'oe_list_button_disabled btn_txt oe_link' : 'btn_txt oe_link'}">
+        <t t-esc="widget.string"/></button>
+    <button type="button" t-name="ListView.row.button"
+            t-att-title="widget.string" t-att-disabled="disabled || undefined"
+            t-attf-class="#{widget.notify ? 'o_notify': ''} o_icon_button #{disabled ? 'oe_list_button_disabled' : ''}"
+            ><i t-attf-class="fa #{widget.icon}" t-att-title="widget.string"/>
+    </button>
+</templates>

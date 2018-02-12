@@ -1,0 +1,9 @@
+<odoo>
+    <data>
+        <template id="assets_backend" name="button_notify assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/button_notify/static/button_notify.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>
