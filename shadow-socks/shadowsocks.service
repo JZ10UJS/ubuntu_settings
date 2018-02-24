@@ -1,0 +1,14 @@
+[Unit]
+Description=ShadowsocksR for ZJ
+After=network.target
+DefaultDependencies=no
+
+[Service]
+Environment=SS_DIR=/etc/shadowsocksr/shadowsocks
+Type=simple
+ExecStart=/usr/bin/python ${SS_DIR}/local.py -c ${SS_DIR}/zj_vonc.conf
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
