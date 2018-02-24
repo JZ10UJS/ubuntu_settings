@@ -6,7 +6,7 @@ sudo apt-get remove -y libreoffice*.*
 sudo apt purge -y ubuntu-web-launchers
 
 sudo apt-get update
-sudo apt-get install -y python-dev python-pip python3-dev git openssh-server vim 
+sudo apt-get install -y python-dev python-pip python3-dev git openssh-server vim libsodium-dev
 
 
 # set the proxy 
