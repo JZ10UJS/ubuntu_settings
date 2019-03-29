@@ -84,5 +84,36 @@ $ service iptables save
 </div>
 </body>
 </html>
+```
 
+# python profile
+``` py
+from functools import wraps
+import cProfile
+
+class profile(object):
+    def __init__(self, fname=None):
+        self.fname = fname
+
+    def __call__(self, f):
+        @wraps(f)
+        def wrapper(*args, **kwargs):
+            profile = cProfile.Profile()
+            result = profile.runcall(f, *args, **kwargs)
+            profile.dump_stats(self.fname or ("%s.cprof" % (f.func_name,)))
+            return result
+
+        return wrapper
+
+p = profile("zj_profile.cprof")
+def fib(n):
+    if n < 3:
+        return 1
+    return fib(n-1) + fib(n-2)
+fib = p(fib) # 将要profile的函数，进行wrap
+fib(20)  # 调用函数，函数执行完毕后，创建出 zj_profile.cprof 文件
+```
+```sh
+$ pip install flameprof
+$ flameprof --format=log zj_profile.cprof | ./flamegraph.pl > func_flame.svg
 ```

@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # remove liboffice
-sudo apt-get remove -y libreoffice*.*
+# sudo apt-get remove -y libreoffice*.*
 # remove amazon 
-sudo apt purge -y ubuntu-web-launchers
+# sudo apt purge -y ubuntu-web-launchers
 
 sudo apt-get update
 sudo apt-get install -y python-dev python-pip python3-dev git openssh-server vim libsodium-dev
